@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Top → Bottom gradient (angles must be multiples of 45) -->
+    <gradient
+        android:type="radial"
+        android:startColor="@color/main"
+        android:endColor="@color/secondary"
+        android:dither="true" />
+</shape>

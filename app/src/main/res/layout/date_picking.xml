@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jp2"
+    tools:context=".DatePickingActivity">
+
+    <EditText
+        android:id="@+id/fromDateEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/amanojaku"
+        android:gravity="center"
+        android:hint="FROM"
+        android:textColorHint="@color/secondary"
+        app:layout_constraintBottom_toTopOf="@+id/toDateEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/toDateEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/amanojaku"
+        android:gravity="center"
+        android:hint="TO"
+        android:textColorHint="@color/secondary"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromDateEditText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="84dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#D93F3E"
+        android:fontFamily="@font/amanojaku"
+        android:text="GO"
+        android:textColor="@color/secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toDateEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
